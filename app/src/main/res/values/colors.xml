@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="image_outside_border">#55111111</color>
+	<color name="image_inside_border">#ff252525</color>
+
+</resources>

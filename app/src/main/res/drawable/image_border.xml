@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<item>
+		<shape android:shape="rectangle" >
+			<solid android:color="@color/image_outside_border" />
+			<padding
+				android:bottom="@dimen/image_outside_border_width"
+				android:left="@dimen/image_outside_border_width"
+				android:right="@dimen/image_outside_border_width"
+				android:top="@dimen/image_outside_border_width" />
+			<corners android:radius="@dimen/image_border_corner_size" />
+		</shape>
+	</item>
+
+	<item>
+		<shape android:shape="rectangle" >
+			<solid android:color="@color/image_inside_border" />
+			<padding
+				android:bottom="@dimen/image_inside_border_width"
+				android:left="@dimen/image_inside_border_width"
+				android:right="@dimen/image_inside_border_width"
+				android:top="@dimen/image_inside_border_width" />
+		</shape>
+	</item>
+
+</layer-list>

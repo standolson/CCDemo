@@ -1,0 +1,12 @@
+<resources>
+
+	<dimen name="activity_horizontal_margin">16dp</dimen>
+	<dimen name="activity_vertical_margin">16dp</dimen>
+
+	<dimen name="image_outside_border_width">10dp</dimen>
+	<dimen name="image_inside_border_width">5dp</dimen>
+	<dimen name="image_border_corner_size">5dp</dimen>
+
+	<dimen name="title_margin">10dp</dimen>
+
+</resources>

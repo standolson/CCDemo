@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:paddingBottom="@dimen/activity_vertical_margin"
+	android:paddingLeft="@dimen/activity_horizontal_margin"
+	android:paddingRight="@dimen/activity_horizontal_margin"
+	android:paddingTop="@dimen/activity_vertical_margin"
+	android:orientation="vertical"
+	tools:context=".LolCatActivity">
+
+	<ImageView
+		android:id="@+id/lolcat_image"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:scaleType="centerInside"
+		android:background="@drawable/image_border"
+		android:adjustViewBounds="true"
+		android:src="@drawable/startup_image" />
+
+	<TextView
+		android:id="@+id/lolcat_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight=".5"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@+id/lolcat_image"
+		android:layout_margin="@dimen/title_margin"
+		android:gravity="center"
+		android:text="@string/default_lolcat_title" />
+
+</RelativeLayout>
