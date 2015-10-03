@@ -9,15 +9,31 @@
 	android:orientation="vertical"
 	tools:context=".LolCatActivity">
 
-	<ImageView
-		android:id="@+id/lolcat_image"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_centerInParent="true"
-		android:scaleType="centerInside"
-		android:background="@drawable/image_border"
-		android:adjustViewBounds="true"
-		android:src="@drawable/startup_image" />
+	<RelativeLayout
+        android:id="@+id/lolcat_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/lolcat_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:background="@drawable/image_border"
+            android:adjustViewBounds="true"
+            android:src="@drawable/startup_image" />
+
+        <ProgressBar
+            android:id="@+id/lolcat_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress_spinner"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
 
 	<TextView
 		android:id="@+id/lolcat_title"
@@ -25,7 +41,7 @@
 		android:layout_height="wrap_content"
 		android:layout_weight=".5"
 		android:layout_centerHorizontal="true"
-		android:layout_below="@+id/lolcat_image"
+		android:layout_below="@+id/lolcat_image_layout"
 		android:layout_margin="@dimen/title_margin"
 		android:gravity="center"
 		android:text="@string/default_lolcat_title" />

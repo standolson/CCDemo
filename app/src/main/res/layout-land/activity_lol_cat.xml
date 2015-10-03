@@ -9,19 +9,35 @@
 	android:orientation="horizontal"
 	tools:context=".LolCatActivity">
 
-	<ImageView
-		android:id="@+id/lolcat_image"
+	<RelativeLayout
 		android:layout_width="0dp"
 		android:layout_height="wrap_content"
 		android:layout_weight=".5"
 		android:layout_gravity="center_vertical"
-		android:gravity="center"
-		android:scaleType="fitEnd"
-		android:background="@drawable/image_border"
-		android:adjustViewBounds="true"
-		android:src="@drawable/startup_image" />
+        android:gravity="center" >
 
-	<TextView
+        <ImageView
+            android:id="@+id/lolcat_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:background="@drawable/image_border"
+            android:adjustViewBounds="true"
+            android:src="@drawable/startup_image" />
+
+        <ProgressBar
+            android:id="@+id/lolcat_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress_spinner"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+
+    <TextView
 		android:id="@+id/lolcat_title"
 		android:layout_width="0dp"
 		android:layout_height="wrap_content"
