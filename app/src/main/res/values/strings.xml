@@ -2,7 +2,8 @@
 
 	<string name="app_name">Wantz Catz?</string>
 
-	<string name="default_lolcat_title">Click!\n\nYou know you want to!!!</string>
+	<string name="default_lolcat_title">Click!\nYou know you want to!!!</string>
 	<string name="lolcat_waiting_title">Please wait</string>
+	<string name="lolcat_error_title">Oopsies!  Try again!</string>
 
 </resources>
