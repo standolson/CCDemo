@@ -48,6 +48,7 @@ public class LolCatActivity extends AppCompatActivity implements LoaderManager.L
 					loadPhotoList();
 			}
 		});
+		lolcatImage.setTag(1);
 
 		// Reload state
 		if (savedInstanceState != null) {
@@ -213,8 +214,10 @@ public class LolCatActivity extends AppCompatActivity implements LoaderManager.L
 	private void loadPhoto(byte[] bytes)
 	{
 		Bitmap bitmap = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
-		if (bitmap != null)
+		if (bitmap != null) {
 			lolcatImage.setImageBitmap(bitmap);
+			lolcatImage.setTag(0);
+		}
 	}
 
 	/**
